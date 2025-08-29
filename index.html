@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Student Tabulation</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <h2>Student Tabulation</h2>
+
+  
+
+  <!-- Form to add student -->
+
+  <div class="form-container">
+
+    <input type="text" id="name" placeholder="Student Name">
+
+    <input type="number" id="roll" placeholder="Roll No">
+
+    <input type="number" id="math" placeholder="Math Marks">
+
+    <input type="number" id="science" placeholder="Science Marks">
+
+    <input type="number" id="english" placeholder="English Marks">
+
+    <button onclick="addStudent()">Add Student</button>
+
+  </div>
+
+  <!-- Table to display students -->
+
+  <table id="studentTable">
+
+    <thead>
+
+      <tr>
+
+        <th>Roll No</th>
+
+        <th>Name</th>
+
+        <th>Math</th>
+
+        <th>Science</th>
+
+        <th>English</th>
+
+        <th>Total</th>
+
+        <th>Average</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <!-- Data will be inserted here dynamically -->
+
+    </tbody>
+
+  </table>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
